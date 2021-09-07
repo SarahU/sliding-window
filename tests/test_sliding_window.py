@@ -20,11 +20,3 @@ def test_max_sum_sliding_window():
     expected_result = 68
     assert actual_result == expected_result
 
-
-# def test_sliding_window_brute_force_max_sum():
-#     input = [4, 20, 36, 12, 18, 8]
-#     k = 3
-#     actualResult = sliding_window_brute_force_all_totals(input, k)
-#
-#     expectedResult = [68, 60, 58]
-#     assert expectedResult == actualResult
