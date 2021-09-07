@@ -38,3 +38,11 @@ def test_smallest_contigous_array_sum_over_s_brute_force():
 #
 #     expected_result = 2
 #     assert actual_result == expected_result
+
+
+def test_smallest_contigous_array_sum_over_s_brute_force_no_answer():
+    input = [13, 32, 7, 21, 45, 19]
+    actual_result = smallest_contiguos_subarray_sum_over_s_brute_force(input, 200)
+
+    expected_result = 0
+    assert actual_result == expected_result

@@ -14,6 +14,9 @@ def smallest_contiguos_subarray_sum_over_s_brute_force(arr, s):
                 if element_count < smallest_element_count:
                     smallest_element_count = element_count
 
+    if smallest_element_count == (len(arr) + 1):
+        return 0
+
     return smallest_element_count
 
 
