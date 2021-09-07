@@ -6,13 +6,14 @@ from src.sliding_window import max_sum_brute_force \
 def test_max_sum_brute_force():
     input = [18, 8, 4, 20, 36, 12]
     k = 3
-    actualResult = max_sum_brute_force(input, k)
+    actual_result = max_sum_brute_force(input, k)
 
-    expectedResult = 68
-    assert actualResult ==  expectedResult
+    expected_result = 68
+    assert actual_result == expected_result
 
 
-# def test_max_sum_sliding_window():
+# def test_max_sum
+# _sliding_window():
 #     input = [4, 20, 36, 12, 18, 8]
 #     k = 3
 #     actualResult = max_sum_sliding_window(input, k)
