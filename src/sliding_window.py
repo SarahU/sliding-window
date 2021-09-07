@@ -1,19 +1,46 @@
-def sliding_window_brute_force_max_sum(arr, k):
+def max_sum_brute_force(arr, k):
     max: int = len(arr)
     max_total: int = 0
 
     for i in range(0, max):
-        if i+k < max:
+        if i + k < max:
             total = 0
             for j in range(0, k):
-                total += arr[i+j]
+                total += arr[i + j]
             if max_total < total:
                 max_total = total
 
     return max_total
 
-# def sliding_window_brute_force_all_totals():
-#     return 0
+
+def max_sum_sliding_window(arr, k):
+    max: int = len(arr)
+    max_total: int = 0
+
+    for i in range(0, max):
+        if i + k < max:
+            total = 0
+            for j in range(0, k):
+                total += arr[i + j]
+            if max_total < total:
+                max_total = total
+
+    return max_total
+
 #
+# def sliding_window_brute_force_all_totals(arr, k):
+#     max: int = len(arr)
+#     totals: int[k]
+#
+#     for i in range(0, max):
+#         if i + k < max:
+#             total = 0
+#             for j in range(0, k):
+#                 total += arr[i + j]
+#             totals[i] = total
+#             print('totals[i]', totals[i], i)
+#         else:
+#             return totals
+
 # input = [12, 20, 36, 4, 18, 8]
 #     k = 3
