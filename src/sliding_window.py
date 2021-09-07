@@ -19,14 +19,14 @@ def max_sum_sliding_window(arr, k):
     # first window
     for i in range(0, k):
         total += arr[i]
+    max_total = total
 
     # rest of the collection
     for i in range(k, len(arr)):
-        if max_total < total:
-            max_total = total
         total -= arr[i-k]
         total += arr[i]
-
+        if max_total < total:
+            max_total = total
 
     return max_total
 
