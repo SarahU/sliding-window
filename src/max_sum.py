@@ -1,3 +1,6 @@
+# brute-force and sliding windows solution for problem:
+# Find the subset of k consecutive items that has the maximum sum
+
 def max_sum_brute_force(arr, k):
     max_total: int = 0
 
@@ -32,3 +35,9 @@ def max_sum_sliding_window(arr, k):
     return max_total
 
 
+def smallest_contigous_array_sum_over_s_brute_force(arr, s):
+    return 0
+
+
+def smallest_contigous_array_sum_over_s_sliding_window(arr, s):
+    return 0
