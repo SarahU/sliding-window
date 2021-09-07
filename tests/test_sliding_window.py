@@ -12,10 +12,10 @@ def test_max_sum_brute_force():
     assert actual_result == expected_result
 
 
-def test_max_sum():
+def test_max_sum_sliding_window():
     input = [18, 8, 4, 20, 36, 12]
     k = 3
-    actual_result = max_sum_brute_force(input, k)
+    actual_result = max_sum_sliding_window(input, k)
 
     expected_result = 68
     assert actual_result == expected_result
