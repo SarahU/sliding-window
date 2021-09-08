@@ -32,15 +32,15 @@ def test_smallest_contigous_array_sum_over_s_brute_force():
     assert actual_result == expected_result
 
 
-# def test_smallest_contigous_array_sum_over_s_sliding_window():
-#     input = [13, 32, 7, 21, 45, 19]
-#     actual_result = smallest_contiguos_subarray_sum_over_s_sliding_window(input, 60)
-#
-#     expected_result = 2
-#     assert actual_result == expected_result
+def test_smallest_contigous_subarray_sum_over_s_sliding_window():
+    input = [13, 32, 7, 21, 45, 19]
+    actual_result = smallest_contiguos_subarray_sum_over_s_sliding_window(input, 60)
+
+    expected_result = 2
+    assert actual_result == expected_result
 
 
-def test_smallest_contigous_array_sum_over_s_brute_force_no_answer():
+def test_smallest_contigous_subarray_sum_over_s_brute_force_no_result():
     input = [13, 32, 7, 21, 45, 19]
     actual_result = smallest_contiguos_subarray_sum_over_s_brute_force(input, 200)
 
